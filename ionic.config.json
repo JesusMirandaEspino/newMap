@@ -1,0 +1,7 @@
+{
+  "name": "newMap",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
