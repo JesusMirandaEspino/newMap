@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'auto',
+    loadChildren: () => import('./autocomplete/autocomplete.module').then( m => m.AutocompletePageModule)
+  },
+  {
+    path: 'copomex',
+    loadChildren: () => import('./copomex/copomex.module').then( m => m.CopomexPageModule)
+  },
 ];
 
 @NgModule({
